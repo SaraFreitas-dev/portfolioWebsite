@@ -1,0 +1,19 @@
+/* CV Button / Download */
+a{
+    text-decoration: none;
+    color: #265b8f;
+  }
+  a:hover {
+    background-color: #265b8f;
+    color: white;
+  }
+  
+  .cv button{ 
+    font-size: 25px;
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgb(37, 89, 141);
+
+  }

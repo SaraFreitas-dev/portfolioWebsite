@@ -315,14 +315,9 @@ transform: translateY(-50%);
       height: 8%;
       padding: 5px;
   }
-  
-  .myself img{
-    width: 50%;
-    height: auto;
-    position: absolute;
-    top: 10%;
-    left: 60%;
-    transform: translate(-50%, -50%);
+  .myself{
+    padding-right: 20%;
+    
   }
   .content h1, h3{
     top: -30%;
@@ -350,18 +345,7 @@ transform: translateY(-50%);
       height: auto;
       padding: 5px;
   }
-  .navbar-logo img {
-      max-width: 100px;
-  }
 
-    .myself img{
-      width: 65%;
-      top: 40%;
-      left: 10%;
-      height: auto;
-      position: absolute;
-      transform: translate(-50%, -50%);
-    }
     .content h1, h3{
       top: -30%;
       left: auto; 
@@ -374,14 +358,6 @@ transform: translateY(-50%);
     }
     h3 {
       font-size:x-small;
-    }
-
-    .navbar img{
-      transform: translate(-20%, -20%);
-      width: 25%;
-      top: 40%;
-      left: 10%;
-      position: absolute;
     }
     
 }

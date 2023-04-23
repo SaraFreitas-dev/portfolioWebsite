@@ -7,52 +7,107 @@ section {
 
 
 /* ----------- ABOUT ME CIRCLES ----------------- */
+
 #aboutme {
   position: relative;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-#aboutme::before {
+.circle1 {
   position: absolute;
   content: "";
-  height: 350px;
-  width: 350px;
+  height: 900px;
+  width: 1000px;
   border-radius: 50%;
-  left: -10%;
-  top: 90%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
   background: linear-gradient(45deg, #7f00ff, pink);
   animation: circle1 4s linear infinite;
-  z-index: 1; 
+  z-index: -1; 
 }
 
-#aboutme::after {
+.circle2 {
   position: absolute;
   content: "";
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  left: 65%;
-  top: 12%;
+  left: 80%;
+  top:-5%;
+  transform: translate(-50%, -50%);
   background: linear-gradient(45deg, #7f00ff, pink);
   animation: circle2 4s linear infinite;
+  z-index: -1;
 }
 
+.circle3 {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  left: 10%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #7f00ff, pink);
+  animation: circle3 4s linear infinite;
+  z-index: -1;
+}
+
+.circle4 {
+  position: absolute;
+  content: "";
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  left: 17%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(45deg, #7f00ff, pink);
+  animation: circle2 4s linear infinite;
+  z-index: -1;
+}
 @keyframes circle1 {
+  0% {
+    transform: translateY(0);
+  }
   50% {
-    left: -23%;
-    top: 81%;
+    transform: translateY(-25px);
+  
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 
 @keyframes circle2 {
+  0% {
+    transform: translateY(0);
+  }
   50% {
-    left: 55%;
-    top: 10%;
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes circle3 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
-}
+
+
 
 
 /* ----------- ABOUT ME MULTITEXT ----------------- */
@@ -60,14 +115,14 @@ section {
   justify-content: center;
   text-align: center;
   align-items: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 /*TITLE*/
 .topLine{
     display: block;
     position: relative;
-    font-size: 35px;
+    font-size: 65px;
     letter-spacing: 5px;
     color: #3d535f;
     align-items: center;
@@ -84,16 +139,38 @@ section {
 }
 
 /*TEXT TO BE TYPED*/
-.multiText{
-    display: block;
-    width: 90%;
-    font-size: 1.2em;
-    font-weight: 900;
-    color: #7f00ff;
-    text-transform: capitalize;
-    letter-spacing: 5px;
-    bottom: 10px;
-    font-size: 35px;
+.multiText {
+  display: inline-block;
+  border-right: 0.3em solid #7f00ff;
+  margin: 0 auto;
+  padding: 0 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 35px;
+  font-weight: 900;
+  color: #7f00ff;
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  bottom: 10px;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.4), 5px 5px 5px #7f00ff;
+}
+
+
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+}
+
+h4{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+p{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .wrapper{
@@ -104,12 +181,10 @@ justify-content: center;
 align-items: center;
 padding: 0 10%;
 overflow: hidden;
+position: absolute;
 }
 
-.wrapper::before{
-  position: absolute;
 
-}
 
 /*-------RESPONSIVE PART--------*/
 @media screen and (max-width: 768px) {
@@ -118,7 +193,8 @@ overflow: hidden;
     padding-left: 20%;
     padding-right: 20%;
   }
-  .multiText{font-size: smaller;}
+
+  .multiText{font-size: 100%}
 #aboutme{
   justify-content: center;
   text-align: center;

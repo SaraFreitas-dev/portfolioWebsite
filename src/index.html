@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="aboutme.css">
     <link rel="stylesheet" href="experience.css">
     <script defer src="index.js"></script>
+    <!-- Add this before your script tag -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
 
     <title>Website Page - Portfolio</title>
@@ -16,19 +19,21 @@
 <body>
     <section id="mainPage">
     <div class="hero">
+        <!--add mouse cursor animation-->
+        <div id="Follow"><img src="../resources/mouse.png" id="mouse"></div>
     
         <!--NAVBAR-->
         <div class="navbar">
-                <img src="../resources/logo.png" class="logo"> 
-                <button type="button"> Follow Me </button>
+                <button type="button" id="linkedin"> Follow Me </button>
         </div>
    
           <!--CONTENT-->
         <div class="content">
                 <h3>Welcome to my</h3>
+                <br>
                 <h1>Portfolio</h1>
                 <br>
-                <button type="button">Check My Work</button>
+                <button type="button" id="github">Check My Work</button>
         </div>
 
         <!--SIDE_BAR-->
@@ -76,6 +81,7 @@
 <!--ABOUT ME PAGE-->
         <section id="aboutme">
                 <div class="wrapper">
+                
                         <div class="circle1"></div>
                         <div class="circle2"></div>
                         <div class="circle3"></div>
@@ -86,23 +92,30 @@
                   <span class="multiText">Coder</span>   
                   <br>
                   <br>
-                  <h4style="font-style: italic;"><strong>"The only way to do great work is to love what you do." - Steve Jobs</strong></h4>
+                  <br>
+                  <br>
+                  <h3 style="font-style: italic;"><strong>"The only way to do great work is to love what you do." - Steve Jobs</strong></h3>
+                  <br>
                        <p> I'm a driven and creative programmer seeking my first job in the industry in a team that values creativity, innovation, and growth. 
                         I'm passionate about pushing boundaries and collaborating with others to achieve shared goals. 
                         With a commitment to learning and being challenged, I'm always eager to improve my skills and stay ahead of the curve. 
                         If you're looking for a dedicated and eternally curious team member, I'd love to join your team!</p>   
                </div> 
         </center>
-        </div>
+        
                     
         </section>
 
  <!--EXPERIENCE / CV PAGE-->
         <section id="experience">
+                <div class="circleExp"></div>
                 <h2>Experience</h2>  
                 <div class="cv">
                 <button type="button"><a href="../resources/Sara-freitas_CV.pdf" download="CV">Download CV</a></button>         
-        </div>
+                <img src="../resources/spaceship.gif" id="spaceship">
+               
+ </div>
+ </div>
         </section>
 
 
@@ -115,7 +128,7 @@
                 loop: true,
                 typeSpeed: 50,
                 backSpeed: 70,
-                backDelay: 1200
+                backDelay: 1000
                 
         });
 </script>

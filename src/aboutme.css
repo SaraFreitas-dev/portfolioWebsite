@@ -1,32 +1,28 @@
 section {
+  margin: 0;
+  padding: 0;
   display: grid;
   place-items: center;
   align-content: center;
-  height: 100vh;
+ 
 }
 
 
 /* ----------- ABOUT ME CIRCLES ----------------- */
 
-#aboutme {
-  position: relative;
-  padding-left: 10%;
-  padding-right: 10%;
-}
+
 
 .circle1 {
   position: absolute;
   content: "";
   height: 900px;
-  width: 1000px;
+  width: 1100px;
   border-radius: 50%;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
+  margin: 0;
   transform: translate(-50%, -50%);
   background: linear-gradient(45deg, #7f00ff, pink);
   animation: circle1 4s linear infinite;
-  z-index: -1; 
+  z-index: -1;
 }
 
 .circle2 {
@@ -35,8 +31,8 @@ section {
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  left: 80%;
-  top:-5%;
+  left: calc(90% - 75px);
+  top: 0%;
   transform: translate(-50%, -50%);
   background: linear-gradient(45deg, #7f00ff, pink);
   animation: circle2 4s linear infinite;
@@ -49,8 +45,8 @@ section {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  left: 10%;
-  top: 70%;
+  left: calc(5% - 25px);
+  top: calc(60% - 25px);
   transform: translate(-50%, -50%);
   background: linear-gradient(45deg, #7f00ff, pink);
   animation: circle3 4s linear infinite;
@@ -60,16 +56,17 @@ section {
 .circle4 {
   position: absolute;
   content: "";
-  height: 100px;
-  width: 100px;
+  height: 110px;
+  width: 110px;
   border-radius: 50%;
-  left: 17%;
-  top: 80%;
+  left: calc(10% - 55px);
+  top: calc(80% - 55px);
   transform: translate(-50%, -50%);
   background: linear-gradient(45deg, #7f00ff, pink);
   animation: circle2 4s linear infinite;
   z-index: -1;
 }
+
 @keyframes circle1 {
   0% {
     transform: translateY(0);
@@ -112,17 +109,20 @@ section {
 
 /* ----------- ABOUT ME MULTITEXT ----------------- */
 #aboutme{
-  justify-content: center;
+   justify-content: center;
   text-align: center;
   align-items: center;
   padding-left: 15%;
   padding-right: 15%;
+  background-image: url(../resources/pastel.avif);
+  z-index: -1;
 }
+
 /*TITLE*/
 .topLine{
     display: block;
     position: relative;
-    font-size: 65px;
+    font-size: 70px;
     letter-spacing: 5px;
     color: #3d535f;
     align-items: center;
@@ -142,11 +142,9 @@ section {
 .multiText {
   display: inline-block;
   border-right: 0.3em solid #7f00ff;
-  margin: 0 auto;
-  padding: 0 0.5em;
   white-space: nowrap;
   overflow: hidden;
-  font-size: 35px;
+  font-size: 45px;
   font-weight: 900;
   color: #7f00ff;
   text-transform: capitalize;
@@ -157,20 +155,25 @@ section {
 
 
 .text{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -25%);
   z-index: 1;
   text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  justify-content: center;
 }
 
-h4{
+h3{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 p{
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+
 }
 
 .wrapper{
@@ -182,7 +185,9 @@ align-items: center;
 padding: 0 10%;
 overflow: hidden;
 position: absolute;
+padding:0% ;
 }
+
 
 
 

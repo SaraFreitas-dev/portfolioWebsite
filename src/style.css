@@ -1,8 +1,9 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 10;
     font-family: sans-serif;
 }
+
 
 /*#mainPage {
     width: 100%;
@@ -23,6 +24,8 @@
 }
 
 #aboutme {
+  position: relative;
+  overflow: hidden;
   height: 100vh; 
   background-attachment: fixed;
   background-position: center;
@@ -50,10 +53,26 @@
 }
 
 h1{
-    font-size: 100px;
+    font-size: 120px;
     margin: 10px 0 30px;
     line-height: 80px;
 }
+
+/*-------------MOUSE ICON MOVEMENT--------------*/
+#mouse {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: translate(-50%,-20%); /* add this line to center the mouse icon */
+  z-index:-1;
+}
+
+#follow {
+  position: absolute;
+  text-align: center;
+}
+
 
 
 /* ----------- NAVBAR ----------------- */
@@ -64,16 +83,12 @@ h1{
     width: 100%;
     height: 10%;
     padding: 10px;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
   }
-  
-  .logo {
-    border-radius: 90%;
-    width: 200px;
-    cursor: pointer;
-  }
+
 
 
   /* ----------- BUTTONS ----------------- */
@@ -84,10 +99,13 @@ h1{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 14px;
+    box-shadow: 0 15px 10px #7f00ff;
+    z-index: 2;
   }
   button:hover {
-    background-color: #265b8f;
+    background-color:#7f00ff;
     color: white;
+    
   }
   
   
@@ -96,12 +114,14 @@ button{
     color: #265b8f;
     padding: 8px 15px;
     background: transparent;
-    border: 2px solid #265b8f;
+    border: 2px solid#7f00ff;
     border-radius: 20px;
     outline: none;
     cursor: pointer;
     font-weight: bold;
     font-size: 14px;
+    box-shadow: 0 15px 10px #7f00ff;
+    z-index: 2 !important;
 }
 
 
@@ -268,9 +288,10 @@ transform: translateY(-50%);
 /* ----------- MAIN MENU IMAGES ----------------- */
 
 .myself .shape {
+  height: 120%;
   position: absolute;
   top: -10%;
-  left: 5%;
+  left: -16%;
   animation: animate 4s linear infinite;
   transform: translate(-50%, -50%) rotate(-35deg);
 }
@@ -278,8 +299,8 @@ transform: translateY(-50%);
 .myself .girl {
   height: 100%;
   position: absolute;
-  top: -10%;
-  left: 15%;
+  top: 0%;
+  left: -10%;
   transform: translate(40%, 20%);
   animation: animate 4s linear infinite;
 }
@@ -288,6 +309,7 @@ transform: translateY(-50%);
   position: relative;
   height: 100%;
   transform: rotateY(180deg);
+  left: -10%;
 }
 
 
@@ -317,7 +339,7 @@ transform: translateY(-50%);
   }
   .myself{
     padding-right: 20%;
-    
+
   }
   .content h1, h3{
     top: -30%;
@@ -360,4 +382,5 @@ transform: translateY(-50%);
       font-size:x-small;
     }
     
+
 }

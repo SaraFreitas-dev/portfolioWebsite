@@ -1,3 +1,4 @@
+
 /*----CV Button / Download------*/
 a{
   text-decoration: none;
@@ -10,7 +11,6 @@ a:hover {
 
 .cv {
   position: relative;
-  z-index: 2;
   text-align: center;
 }
 
@@ -27,7 +27,6 @@ a:hover {
   letter-spacing: 2px;
   text-transform: capitalize;
   box-shadow: 0 15px 10px #7f00ff;
-  z-index: 0;
 }
 
 
@@ -35,30 +34,20 @@ a:hover {
 .circleExp{
   position: absolute;
   content: "";
-  height: 600px;
-  width: 600px;
+  height: 450px;
+  width: 450px;
   border-radius: 50%;
   display: grid;
   place-items: center;
   align-content: center;
   text-align: center;
-  transform: translate(-50%, -50%);
   background: rgb(158,224,242);
   background: linear-gradient(0deg, rgba(158,224,242,1) 25%, rgba(45,130,253,1) 100%);
   animation: circle1 4s linear infinite;
   z-index: 0;
-  left: 50%;
-  top: 50%;
-  margin-top: -300px;
-  margin-left: -300px;
 }
 
 #experience{
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  padding-left: 15%;
-  padding-right: 15%;
   background-image:  url(../resources/stars.gif);
   position: relative;
 
@@ -98,3 +87,56 @@ a:hover {
   }
 }
 
+/*-------------CODE ICONS-------------*/
+.codeIcons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 0;
+}
+
+.codeIcons img {
+  animation: iconAni 7s linear infinite;
+  padding-right: 30px;
+  opacity: 0;
+}
+
+
+@keyframes iconAni{
+  0%{
+    transform: translateY(-90vh);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  100%{
+    transform: translatex(0vh);
+    opacity: 0;
+  }
+}
+
+.codeIcons img:nth-child(1){
+  animation-delay: 1s;
+}
+.codeIcons img:nth-child(2){
+  animation-delay: 4.5s;
+
+}
+.codeIcons img:nth-child(3){
+  animation-delay: 3s;
+  padding-left: 55%;
+}
+.codeIcons img:nth-child(4){
+  animation-delay: 5.5s;
+
+}
+.codeIcons img:nth-child(5){
+  animation-delay: 1.5s;
+
+}

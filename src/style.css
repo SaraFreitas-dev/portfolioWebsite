@@ -34,7 +34,9 @@
 }
 
 #experience {
-  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  height: 100vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -65,7 +67,7 @@ h1{
   height: 40px;
   border-radius: 50%;
   transform: translate(-50%,-20%); /* add this line to center the mouse icon */
-  z-index:-1;
+  z-index:1;
 }
 
 #follow {
@@ -86,21 +88,22 @@ h1{
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 2;
+
+    
   }
 
 
 
   /* ----------- BUTTONS ----------------- */
   
-  .navbar button {
+   button {
     margin-left: 10px;
     margin-right: auto;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     font-size: 14px;
     box-shadow: 0 15px 10px #7f00ff;
-    z-index: 2;
+  
   }
   button:hover {
     background-color:#7f00ff;
@@ -123,62 +126,6 @@ button{
     box-shadow: 0 15px 10px #7f00ff;
     z-index: 2 !important;
 }
-
-
-/* ----------- SIDEBAR ----------------- */
-
-.side-bar{
-width: 50px;
-height: 100vh;
-background: linear-gradient( #868ba5,#268994);
-position: absolute;
-right: 0;
-top: 0;
-display: flex;
-flex-direction: column;
-align-items: center; /* center horizontally */
-padding-top: 2%;   
-display: flex;
-align-items: center;
-position: fixed;
-}
-
-.side-bar img{
-    height: 30px;
-}
-
-.menu{
-   display: block;
-   width: 25px;
-   margin: 40px auto 0;
-   cursor: pointer;
-}
-
-
-
-.social-links img, .useful-links img{
-width: 25px;
-margin: 5px auto;
-cursor: pointer;
-
-}
-
-.social-links{
-width:50px;
-text-align: center;
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-}
-
-.useful-links{
-    width:50px;
-    text-align: center;
-    position: absolute;
-    bottom: 30px;
-    }
-
-
 
 /* ----------- BUBBLES ----------------- */
 .bubbles img{
@@ -351,9 +298,7 @@ transform: translateY(-50%);
     font-size: 40px;
 
   }
-  h3 {
-    font-size:smaller;
-  }
+
 
 
 }
@@ -375,7 +320,7 @@ transform: translateY(-50%);
     }
   
     h1{
-      font-size: 30px;
+      font-size: 40px;
   
     }
     h3 {

@@ -21,7 +21,7 @@ myButton1.addEventListener('click', () => {
 			mouse.style.top = e.clientY + "px";
 		}
         document.getElementById("mouse").addEventListener("mouseleave", function() {
-            document.getElementById("mouse-btn").style.opacity = "1";
+            document.getElementById("mouse-btn");
           });
           
 

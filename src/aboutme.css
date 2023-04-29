@@ -165,7 +165,7 @@ section {
   position: relative;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -25%);
+  transform: translate(-50%, 0%);
   z-index: 1;
   text-align: center;
   padding-left: 20%;
@@ -173,14 +173,10 @@ section {
   justify-content: center;
 }
 
-h3{
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 20px;
-}
 
 p{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .wrapper{
@@ -218,4 +214,8 @@ padding:0% ;
 h1{
   font-size: 60px;
 }
+p{
+  font-size: 10px;
+}
+
 }

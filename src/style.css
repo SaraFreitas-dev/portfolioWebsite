@@ -5,7 +5,7 @@
 }
 
 
-/*#mainPage {
+#mainPage {
     width: 100%;
     height: 100vh;
     background-image: url(../resources/background.jpg);
@@ -13,16 +13,7 @@
     background-position: center;
     position: relative;
     overflow: hidden;
-}*/
-#mainPage {
-  height: 100vh;
-  background-image: url(../resources/background.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-
 #aboutme {
   position: relative;
   overflow: hidden;
@@ -63,10 +54,10 @@ h1{
 /*-------------MOUSE ICON MOVEMENT--------------*/
 #mouse {
   position: fixed;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  transform: translate(-50%,-20%); /* add this line to center the mouse icon */
+  transform: translate(-35%,0%); /* add this line to center the mouse icon */
   z-index:1;
 }
 
@@ -87,9 +78,7 @@ h1{
     padding: 10px;
     position: absolute;
     top: 0;
-    left: 0;
-
-    
+    left: 0;  
   }
 
 
@@ -97,6 +86,9 @@ h1{
   /* ----------- BUTTONS ----------------- */
   
    button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 10px;
     margin-right: auto;
     font-family: 'Times New Roman', Times, serif;
@@ -110,7 +102,6 @@ h1{
     color: white;
     
   }
-  
   
 
 button{
@@ -199,40 +190,24 @@ button{
 }
 
 
-.myself{
+
+/* ----------- MAIN MENU IMAGES ----------------- */
+.myself {
   width: 40%;
-  height: 70%;
+  height: calc(70% + 50px); /* Increase height by 50px */
   position: absolute;
   bottom: 0;
   right: 50px;
 }
 
-.myself img{
-  height: 100%;
+.myself img {
+  height: calc(100% + 50px); /* Increase height by 50px */
   position: relative;
   left: -30%;
   top: 60%;
-  bottom: 0;
   transform: translateY(-25%);
   transition: bottom 1s;
 }
-
-/* KEEP MOVING EFFECT
-@keyframes move {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-*/
-
-
-/* ----------- MAIN MENU IMAGES ----------------- */
 
 .myself .shape {
   height: 120%;
@@ -252,13 +227,12 @@ button{
   animation: animate 4s linear infinite;
 }
 
-.myself img{
+.myself img {
   position: relative;
-  height: 100%;
+  height: calc(100% + 50px); /* Increase height by 50px */
   transform: rotateY(180deg);
   left: -10%;
 }
-
 
 
 @keyframes animate {

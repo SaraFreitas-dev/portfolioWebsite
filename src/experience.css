@@ -10,14 +10,7 @@ a:hover {
 }
 
 .cv {
-  position: relative;
   text-align: center;
-}
-
-.cv h2 {
-  color: white;
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
 .cv button{ 
@@ -44,14 +37,14 @@ a:hover {
   background: rgb(158,224,242);
   background: linear-gradient(0deg, rgba(158,224,242,1) 25%, rgba(45,130,253,1) 100%);
   animation: circle1 4s linear infinite;
-  z-index: 0;
+  z-index: 1;
 }
 
 #experience{
   background-image:  url(../resources/stars.gif);
   position: relative;
-
 }
+
 
 
 /*-------------SPACESHIP ANIMATION-------------*/
@@ -100,14 +93,14 @@ a:hover {
 .codeIcons img {
   animation: iconAni 7s linear infinite;
   padding-right: 30px;
-  opacity: 0;
+  opacity: 0; 
 }
 
 
 @keyframes iconAni{
   0%{
     transform: translateY(-90vh);
-    opacity: 0;
+    opacity: 0.3;
   }
   50%{
     opacity: 1;
@@ -117,7 +110,7 @@ a:hover {
   }
   100%{
     transform: translatex(0vh);
-    opacity: 0;
+    opacity: 0.3;
   }
 }
 

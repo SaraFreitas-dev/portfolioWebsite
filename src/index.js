@@ -24,5 +24,29 @@ myButton1.addEventListener('click', () => {
             document.getElementById("mouse-btn");
           });
           
+/*-------------------TOGGLE MENU------------------*/
+let menu = document.querySelector(".menu");
+let toggle = menu.querySelector(".toggle");
+let navigation = menu.querySelector(".navigation");
+
+toggle.addEventListener("click", function() {
+  navigation.classList.toggle("activate");
+});
+
+// Close the navigation menu when clicking outside of it
+document.addEventListener("click", function(event) {
+  if (!menu.contains(event.target)) {
+    navigation.classList.remove("activate");
+  }
+});
+
+
+
+
+
+
+
+
+
 
 

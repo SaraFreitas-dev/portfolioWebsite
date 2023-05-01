@@ -35,19 +35,19 @@ a:hover {
   align-content: center;
   text-align: center;
   background: rgb(158,224,242);
-  background: linear-gradient(0deg, rgba(158,224,242,1) 25%, rgba(45,130,253,1) 100%);
+  background: linear-gradient(0deg, rgb(158, 189, 242) 25%, rgba(45,130,253,1) 100%);
   animation: circle1 4s linear infinite;
   z-index: 1;
 }
 
 #experience{
-  background-image:  url(../resources/stars.gif);
+  background-image:  url(../resources/3203707.jpg);
   position: relative;
 }
 
 
 
-/*-------------SPACESHIP ANIMATION-------------*/
+/*-------------SPACESHIP ANIMATION
 #experience #spaceship {
   width: 30%;
   animation:move 7s linear infinite;
@@ -79,6 +79,8 @@ a:hover {
     left: 0%;
   }
 }
+-------------*/
+
 
 /*-------------CODE ICONS-------------*/
 .codeIcons {
@@ -133,3 +135,47 @@ a:hover {
   animation-delay: 1.5s;
 
 }
+
+/*-------RESPONSIVE------*/
+@media (max-width: 768px) {
+  .circle1 {
+    height: 500px;
+    width: 600px;
+  }
+  
+  .circle2 {
+    height: 80px;
+    width: 80px;
+    left: calc(90% - 40px);
+    top: 10%;
+  }
+  
+  .circle3 {
+    height: 30px;
+    width: 30px;
+    left: calc(5% - 15px);
+    top: calc(60% - 15px);
+  }
+  
+  .circle4 {
+    height: 60px;
+    width: 60px;
+    left: calc(10% - 30px);
+    top: calc(80% - 30px);
+  }
+  
+  .multiText {
+    font-size: 30px;
+  }
+  
+  .text {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+  .codeIcons{
+    width: 10px;
+    height: 10px;
+  }
+}
+

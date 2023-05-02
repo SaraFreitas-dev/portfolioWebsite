@@ -52,7 +52,31 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-/*-----------SCROLL TEXT ANIMATION DELAY----------*/
+/*-----------BUTTON SOUNDS----------*/
+// Wait for the document to finish loading
+document.addEventListener("DOMContentLoaded", function() {
+  // Get all buttons on the page
+  var buttons = document.getElementsByTagName("button");
+
+  // Get the audio element
+  var audio = document.getElementById("audio");
+
+  // Function to play the audio
+  function playAudio() {
+    audio.currentTime = 0; // Reset the audio to the beginning
+    audio.play();
+  }
+
+  // Attach the click event listener to all buttons
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener("click", playAudio);
+  }
+});
+
+
+
+
+
 
 
 

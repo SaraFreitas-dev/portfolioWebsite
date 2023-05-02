@@ -52,11 +52,7 @@
 
 /*-------------MAIN PAGE TEXT--------------*/
 .content{
-    color: black;
     font-size: 72px;
-  background: -webkit-linear-gradient(#8e549c, #3f2a8b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
     position: absolute;
     top: 50%;
     left: 8%;
@@ -67,16 +63,34 @@
 }
 
 h1{
-    font-size: 130px;
+    font-size: 120px;
     margin: 10px 0 30px;
-    line-height: 80px;
-    font-family: 'Montserrat', sans-serif;                                              
+    font-weight:900;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif; 
+    color: transparent;
+    background: url('../resources/t.gif') repeat;
+    background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 100%;
+    animation: animated-text 7s infinite;  
+
+} /* animation in text background */
+@keyframes animated-text {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 0; }
 }
+
 h3{
   font-size: 20px;
   margin: 10px 0 30px;
   line-height: 80px;
   font-family: 'Montserrat', sans-serif;   
+  background: -webkit-linear-gradient(#8e549c, #3f2a8b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
                                            
 }
 
@@ -288,10 +302,10 @@ button{
 }
 
 .myself .shape {
-  min-height: 120%;
+  min-height: 80%;
   position: absolute;
   top: -10%;
-  left: -16%;
+  left: -20%;
   animation: animate 4s linear infinite;
   transform: translate(-50%, -50%) rotate(-35deg);
 }
@@ -328,9 +342,12 @@ button{
 
 
 /*-------------- Tablet styles -------------*/
-@media only screen and (min-width: 576px) and (max-width: 767px) {
+@media only screen and (min-width: 576px) and (max-width: 867px) {
   .hero {
       height: 50vh;
+  }
+  .myself .shape{
+    height: 20%;;
   }
   .navbar {
       height: 8%;

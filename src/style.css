@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
 *{
     margin: 0;
     padding: 10;
@@ -8,7 +10,7 @@
 #mainPage {
     width: 100%;
     height: 100vh;
-    background-image: url(../resources/background.jpg);
+    background-image: url(../resources/2.avif);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -47,21 +49,38 @@
   overflow: hidden;
 }
 
+
+/*-------------MAIN PAGE TEXT--------------*/
 .content{
     color: black;
+    font-size: 72px;
+  background: -webkit-linear-gradient(#8e549c, #3f2a8b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     position: absolute;
     top: 50%;
     left: 8%;
     transform: translateY(-50%);
     z-index: 1;
+    line-height: 0%;
 
 }
 
 h1{
-    font-size: 120px;
+    font-size: 130px;
     margin: 10px 0 30px;
     line-height: 80px;
+    font-family: 'Montserrat', sans-serif;                                              
 }
+h3{
+  font-size: 20px;
+  margin: 10px 0 30px;
+  line-height: 80px;
+  font-family: 'Montserrat', sans-serif;   
+                                           
+}
+
+
 
 /*-------------MOUSE ICON MOVEMENT--------------*/
 #mouse {
@@ -95,7 +114,52 @@ h1{
 
 
 
-  /* ----------- BUTTONS ----------------- */
+  /* -----------MAIN PAGE BUTTONS----------------- */
+  #mainBtn {
+    z-index: 3;
+    position: fixed;
+    top: 22px;
+    right: 22px;
+  }
+  
+  #mainBtn a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 13px 17px 13px;
+    outline: 0;
+    border: 1px solid #7f00ff;
+    cursor: pointer;
+    box-shadow: 0 7px 8px #7f00ff;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: relative;
+    justify-content: space-around;
+  }
+  
+  #mainBtn a:after {
+    content: "";
+    background-color: #d3aff6;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 10px;
+    left: 7px;
+    transition: 0.2s;
+  }
+  
+  #mainBtn a:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+  
+
+
+  /* -----------BUTTONS----------------- */
   
    button {
     display: flex;
@@ -105,7 +169,6 @@ h1{
     margin-right: auto;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    font-size: 14px;
     box-shadow: 0 15px 10px #7f00ff;
   
   }
@@ -114,7 +177,10 @@ h1{
     color: white;
     
   }
+
+ 
   
+
 
 button{
     color: #265b8f;
@@ -125,7 +191,7 @@ button{
     outline: none;
     cursor: pointer;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 18px;
     box-shadow: 0 15px 10px #7f00ff;
     z-index: 2 !important;
 }
@@ -206,7 +272,7 @@ button{
 /* ----------- MAIN MENU IMAGES ----------------- */
 .myself {
   width: 40%;
-  height: calc(70% + 50px); /* Increase height by 50px */
+  height: calc(70% + 50px);
   position: absolute;
   bottom: 0;
   right: 50px;
@@ -222,7 +288,7 @@ button{
 }
 
 .myself .shape {
-  height: 120%;
+  min-height: 120%;
   position: absolute;
   top: -10%;
   left: -16%;
@@ -231,7 +297,7 @@ button{
 }
 
 .myself .girl {
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   top: 0%;
   left: -10%;
@@ -284,8 +350,19 @@ button{
     font-size: 40px;
 
   }
+button{
+  font-size: 12px;
+}
+.myself .shape{
+  height: 50%;
+    }
+    .myself .girl{
+      height: 50%;
+        }
 
-
+#mainBtn a{
+  font-size: 10px;
+}        
 
 }
 
@@ -294,6 +371,14 @@ button{
   .hero {
     height: 40vh;
   }
+  button{
+    font-size: 10px;
+  }
+  #mainBtn a{
+    font-size: 7px;
+    
+  }        
+  
   
   .navbar {
     height: auto;
@@ -322,6 +407,11 @@ button{
     right: 10px;
   }
 
-  
+  .myself .shape{
+height: 50%;
+  }
+  .myself .girl{
+    height: 50%;
+      }
 
-}
+    }

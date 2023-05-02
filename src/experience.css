@@ -94,9 +94,9 @@ a:hover {
 
 .codeIcons img {
   animation: iconAni 7s linear infinite;
-  padding-right: 30px;
-  opacity: 0; 
+  opacity: 0;
 }
+
 
 
 @keyframes iconAni{

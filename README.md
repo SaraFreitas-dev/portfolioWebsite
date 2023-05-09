@@ -18,7 +18,7 @@
 <img style="height: 30px;" src="https://user-images.githubusercontent.com/105666041/235691286-749350a6-fedb-4c0f-b41b-a1817179c5ff.png">
 Usage
 </h2>
-<p>To use and explore the website portfolio, simply open the HTML files in a web browser. You can access the website by clicking <a href="https://your-website-link.com">here</a>.</p>
+<p>To use and explore the website portfolio, simply open the HTML files in a web browser. You can access the website by clicking <a href="https://sarafreitas-dev.github.io/portfolioWebsite/src/">here</a>.</p>
 <br>
 
 

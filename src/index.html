@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="aboutme.css">
     <link rel="stylesheet" href="experience.css">
     <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="contactme.css">
     <script defer src="index.js"></script>
 
     <!--------------------JQUERY-------------------->
@@ -50,11 +51,11 @@
                 <br>
                 <h1>Portfolio</h1>
                 <br>
-                <br>
-                <button type="button" id="github">
-                        <img style="height: 20px; "src="../resources/github.png">
-                         Check My Work</button>
-        </div>
+              <br>               
+               <button type="button" id="github">
+                                <img style="height: 20px; "src="../resources/github.png">
+                                 Check My Work</button>
+                </div>
 
 </div>
     
@@ -106,7 +107,7 @@
                         driven by the belief that loving what you do is the key to doing great work. 
                         Let's code together !</p>      
               <br><br>
-               <div style="padding-bottom:15%; display: flex; justify-content: space-around;"
+               <div class="about-img">
                <img src="https://skillicons.dev/icons?i=maven"/>
 <img src="https://skillicons.dev/icons?i=tailwind,vim"/>
 <img src="https://skillicons.dev/icons?i=ps,regex,spring"/>
@@ -136,11 +137,27 @@
                 <img src="../resources/mysql.png" height="70px">
         </div>
         </section>
-
         <!---------------------CONTACT-------------------->
         <section id="contactme">
+                <div class="contact-form">
+                        <h1>Contact <span>Me</span></h1>
+                        <p>I'm eager to connect with anyone else who's passionate about technology. Whether you have a project in mind or just want to chat, I'd love to hear from you.</p>
+                        <form action="">
+                        <input type="" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="" placeholder="E-mail" required>
+                        <input type="" placeholder="Write a Subject" required>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required>
+        
+        
+                        </textarea>  
+                        <input type="Submit" name="" value="Submit" class="btn">     
+                        </form>
+                </div> 
+                <div class="contact-img">
+                        <img src="../resources/contact-img.jpg">
+                </div>       
+                </section>  
 
-        </section>
 
 
 <!------------------NAVIGATION MENU------------------->   

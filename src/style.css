@@ -44,9 +44,14 @@
   background-image: url(../resources/1151428.webp);
   opacity: 90%;
   background-size: cover;
-  background-position: center;
+  background-position: center;  
   position: relative;
   overflow: hidden;
+  padding: 40px 15%;
+  display:grid;
+  grid-template-columns: repeat(2,2fr);
+  align-items: center;
+  grid-gap: 6rem;
 }
 
 

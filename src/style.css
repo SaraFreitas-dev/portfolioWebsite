@@ -40,18 +40,20 @@
 
 #contactme {
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background-image: url(../resources/1151428.webp);
   opacity: 90%;
   background-size: cover;
   background-position: center;  
   position: relative;
   overflow: hidden;
-  padding: 40px 15%;
   display:grid;
+  padding: 70px 7%;
   grid-template-columns: repeat(2,2fr);
   align-items: center;
-  grid-gap: 6rem;
+  grid-gap: 6rem; 
+  z-index: 1 ;
 }
 
 
@@ -362,11 +364,7 @@ button{
     padding-right: 20%;
 
   }
-  .content h1, h3{
-    top: -30%;
-    left: auto; 
-    position: absolute;
-  }
+
 
   h1{
     font-size: 40px;
@@ -407,33 +405,7 @@ button{
     padding: 5px;
   }
   
-  .content h1,
-  h3 {
-    top: -30%;
-    left: auto;
-    position: absolute;
-  }
   
-  h1 {
-    font-size: 40px;
-  }
   
-  h3 {
-    font-size: x-small;
-  }
-  
-  .myself {
-    width: 60%;
-    height: auto;
-    bottom: 0;
-    right: 10px;
-  }
-
-  .myself .shape{
-height: 50%;
-  }
-  .myself .girl{
-    height: 50%;
-      }
 
     }

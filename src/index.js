@@ -57,6 +57,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 document.addEventListener("DOMContentLoaded", function() {
   // Get all buttons on the page
   var buttons = document.getElementsByTagName("button");
+  var links = document.getElementsByTagName("a");
 
   // Get the audio element
   var audio = document.getElementById("audio");
@@ -71,9 +72,28 @@ document.addEventListener("DOMContentLoaded", function() {
   for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", playAudio);
   }
+  // Attach the click event listener to all anchor tags
+  for (var i = 0; i < links.length; i++) {
+    links[i].addEventListener("click", playAudio);
+  }
 });
 
 
+/*-------------------SUBMIT EMAIL------------------*/
+  function sendEmail() {
+    var name = document.querySelector('.name').value;
+    var email = document.querySelector('.email').value;
+    var subject = document.querySelector('.subject').value;
+    var message = document.querySelector('.message').value;
+
+    var link = 'mailto:sfontes94@gmail.com' +
+               '?subject=' + encodeURIComponent(subject) +
+               '&body=' + encodeURIComponent('Name: ' + name + '\n\nEmail: ' + email + '\n\nMessage: ' + message);
+
+    window.location.href = link;
+  }
+
+  document.querySelector('.btn').addEventListener('click', sendEmail);
 
 
 

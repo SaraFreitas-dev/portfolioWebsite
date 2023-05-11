@@ -19,7 +19,7 @@ section {
   height: 900px;
   width: 1100px;
   border-radius: 50%;
-  margin: 0;
+  margin: 0%;
   background: linear-gradient(45deg, #7f00ff, pink);
   animation: circle1 4s linear infinite;
   z-index: -1;
@@ -111,7 +111,6 @@ section {
 
 
 
-
 /* ----------- ABOUT ME MULTITEXT ----------------- */
 #aboutme{
    justify-content: center;
@@ -126,7 +125,6 @@ section {
 
 /*TITLE*/
 .topLine{
-    display: block;
     position: relative;
     font-size: 70px;
     letter-spacing: 5px;
@@ -146,7 +144,6 @@ section {
 
 /*TEXT TO BE TYPED*/
 .multiText {
-  display: inline-block;
   border-right: 0.3em solid #7f00ff;
   white-space: nowrap;
   overflow: hidden;
@@ -158,6 +155,7 @@ section {
   bottom: 10px;
   text-shadow: 2px 2px 2px rgba(0,0,0,0.4), 5px 5px 5px #7f00ff;
 }
+
 
 
 .text{
@@ -194,32 +192,59 @@ padding:0% ;
 
 
 /*-------RESPONSIVE PART--------*/
-@media screen and (max-width: 768px) {
+@media (max-width: 1000px) {
   p {
-    font-size: 0.9em;
-    padding-left: 20%;
-    padding-right: 20%;
+    font-size: 20px;
   }
 
   .multiText{
-    font-size: 100%  ;
+    font-size: 30px;
+    align-content: center;
+    margin-right: 19%;
   }
+
+#aboutme{
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.topLine{
+  font-size: 45px;
+}
+
+h1{
+  font-size: 60px;
+}
+.circle1{
+  height: 700px;
+  width: 950px;
+}
+.about-img{
+ margin-bottom: 20%;
+}
+
+}
+
+
+@media (max-width: 700px) {
+  p {
+    font-size: 15px;
+
+  }
+
 #aboutme{
   justify-content: center;
   text-align: center;
   align-items: center;
 
 }
-h1{
-  font-size: 60px;
-}
-p{
-  font-size: 10px;
+.topLine{
+  font-size: 40px;
 }
 
-.about-img{
-
-
+.about-img img{
+height:40px;
 }
 
 }

@@ -8,8 +8,9 @@
 
 
 #mainPage {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
     background-image: url(../resources/2.avif);
     background-size: cover;
     background-position: center;
@@ -19,7 +20,7 @@
 #aboutme {
   position: relative;
   overflow: hidden;
-  height: 100vh; 
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -29,19 +30,19 @@
 #experience {
   position: relative;
   overflow: hidden;
-  height: 100vh; 
+  width:auto;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 
-
 #contactme {
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  height:fit-content;
+  width: auto;
   background-image: url(../resources/1151428.webp);
   opacity: 90%;
   background-size: cover;
@@ -49,12 +50,11 @@
   position: relative;
   overflow: hidden;
   display:grid;
-  padding: 70px 7%;
   grid-template-columns: repeat(2,2fr);
   align-items: center;
-  grid-gap: 6rem; 
   z-index: 1 ;
 }
+
 
 
 /*-------------MAIN PAGE TEXT--------------*/
@@ -69,7 +69,7 @@
 
 }
 
-h1{
+.content h1{
     font-size: 120px;
     margin: 10px 0 30px;
     font-weight:900;
@@ -221,7 +221,6 @@ button{
 .bubbles img{
   width: 50px;
   animation: bubble 7s linear infinite;
-  padding-right: 30px;
   opacity:0;
 }    
 .bubbles{
@@ -231,6 +230,7 @@ button{
   justify-content: space-around;
   position: absolute;
   bottom: 0;
+  left: 0;
 }
 
 
@@ -349,7 +349,7 @@ button{
 
 
 /*-------------- Tablet styles -------------*/
-@media only screen and (min-width: 576px) and (max-width: 867px) {
+@media(max-width:1100px) {
   .hero {
       height: 50vh;
   }
@@ -366,31 +366,32 @@ button{
   }
 
 
-  h1{
-    font-size: 40px;
-
-  }
 button{
   font-size: 12px;
 }
-.myself .shape{
-  height: 50%;
-    }
-    .myself .girl{
-      height: 50%;
-        }
 
 #mainBtn a{
   font-size: 10px;
-}        
+}
+
+.myself{
+  height: 60%;
+  padding: 7%;
+}
+
+.content h1{
+  font-size: 70px;
+}
+
+.content h3{
+  font-size: 20px;
+}
 
 }
 
 /* Mobile styles */
-@media only screen and (max-width: 575px) {
-  .hero {
-    height: 40vh;
-  }
+@media(max-width: 775px) {
+
   button{
     font-size: 10px;
   }
@@ -399,13 +400,22 @@ button{
     
   }        
   
-  
   .navbar {
     height: auto;
     padding: 5px;
   }
-  
-  
-  
+
+  .myself{
+    height: 50%;
+    padding: 7%;
+  }
+
+  .content h1{
+    font-size: 50px;
+  }
+
+  .content h3{
+    font-size: 15px;
+  }
 
     }

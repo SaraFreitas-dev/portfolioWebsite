@@ -4,11 +4,20 @@
    width: 720px;
    height: auto;
    border-radius: 10px;
+   padding-left: 10%;
 }
 
 .contact-form h1{
-  font-size: 80px; 
+  font-size: 80px;
   margin-bottom: 20px;  
+  font-family: 'Montserrat', sans-serif; 
+    color: transparent;
+    background: url('../resources/t.gif') repeat;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 100%;
+    animation: animated-text 7s infinite; 
 }
 
 .contact-form p{

@@ -47,6 +47,10 @@ form textarea{
     border-radius: 10px;
  }
 
+ textarea, input {
+   color: white;
+ }
+ 
  
  .contact-form textarea{
     resize: none;

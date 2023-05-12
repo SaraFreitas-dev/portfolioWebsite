@@ -80,27 +80,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 /*-------------------SUBMIT EMAIL------------------*/
-  function sendEmail() {
-    var name = document.querySelector('.name').value;
-    var email = document.querySelector('.email').value;
-    var subject = document.querySelector('.subject').value;
-    var message = document.querySelector('.message').value;
+function sendEmail() {
+  var name = document.querySelector('.name').value;
+  var email = document.querySelector('.email').value;
+  var subject = document.querySelector('.subject').value;
+  var message = document.querySelector('.message').value;
 
-    var link = 'mailto:sfontes94@gmail.com' +
-               '?subject=' + encodeURIComponent(subject) +
-               '&body=' + encodeURIComponent('Name: ' + name + '\n\nEmail: ' + email + '\n\nMessage: ' + message);
-
-    window.location.href = link;
+  // Perform input validation
+  if (name.trim() === '' || subject.trim() === '' || message.trim() === '') {
+    // Display an error message or take appropriate action
+    alert('Please fill in all fields before submitting.');
+    return;
   }
 
-  document.querySelector('.btn').addEventListener('click', sendEmail);
+  // Validate email format
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
 
+  var link = 'mailto:sfontes94@gmail.com' +
+    '?subject=' + encodeURIComponent(subject) +
+    '&body=' + encodeURIComponent('Name: ' + name + '\n\nEmail: ' + email + '\n\nMessage: ' + message);
 
+  window.location.href = link;
+}
 
-
-
-
-
-
-
-
+document.querySelector('.btn').addEventListener('click', sendEmail);

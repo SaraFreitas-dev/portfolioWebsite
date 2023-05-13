@@ -453,16 +453,15 @@ button{
 
       @media (max-width: 412px) {
         .myself {
-            max-width: 40% ;
-            height: auto;
-            margin-bottom: 10%;
+          height: 30%;
+          width: 30%;
         }
       .content h1{
         font-size: 30px;
       }
     
       .content h3{
-        font-size: 15px;
+        font-size: 13px;
       }
 
       button{
@@ -470,7 +469,7 @@ button{
       }
       #mainBtn a{
         font-size: 7px;
-        
+        margin-top: 10%;
       }  
       
     }

@@ -50,9 +50,12 @@ Purpose
 <img style="height: 30px;" src="https://user-images.githubusercontent.com/105666041/235689147-39b12362-9b9a-45de-a6c8-3a983cbbcca5.png">
 Features
 </h2>
-  <p>Gradient practice</p>
+  <p>Gradient effects</p>
   <p>Animated elements like bubbles</p>
   <p>CSS effects and animations</p>
+  <p>Color text transformation</p>
+  <p>Hamburger Menu</p>
+  
 <br>
 
 

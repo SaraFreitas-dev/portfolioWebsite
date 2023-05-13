@@ -430,7 +430,7 @@ button{
   }
 
   .myself{
-    height: 30%;
+    height: 40%;
     padding: 7%;
     margin-bottom: 20%;
   }
@@ -448,7 +448,7 @@ button{
 
       @media (max-width: 412px) {
         .myself {
-            max-width: 25% ;
+            max-width: 40% ;
             height: auto;
         }
       .content h1{

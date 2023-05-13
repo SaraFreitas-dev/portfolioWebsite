@@ -438,6 +438,7 @@ button{
   .myself{   
     margin: 20% -10%;
     height: 40%;
+    width: 40%;
   }
 
   .content h1{
@@ -464,5 +465,12 @@ button{
         font-size: 15px;
       }
 
+      button{
+        font-size: 10px;
+      }
+      #mainBtn a{
+        font-size: 7px;
+        
+      }  
       
     }

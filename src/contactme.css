@@ -132,8 +132,25 @@ transform: scale(1.1);
    form{
       padding-right: 12%;
    }
-
-  }
+   .contact-form form input, 
+   form textarea{
+       font-size: 0.8rem;
+       margin-bottom: 0.2rem;
+    }
+   
+    .contact-img{
+      width: 35%;
+      height: auto;
+      text-align: center;
+      margin-top: -10%;
+   }
+   
+   .contact-form h1{
+      font-size: 50px;
+      margin-bottom: 10px;  
+      margin-top: -10%;
+        }
+        }
 
   
 

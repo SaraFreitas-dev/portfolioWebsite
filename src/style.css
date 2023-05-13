@@ -6,7 +6,6 @@
     font-family: sans-serif;
 }
 
-
 #mainPage {
   height:100vh;
   max-height: 100%;
@@ -352,16 +351,13 @@ button{
   .hero {
       height: 50vh;
   }
-  .myself .shape{
-    height: 20%;;
-  }
+
   .navbar {
       height: 8%;
       padding: 5px;
   }
   .myself{
     padding-right: 20%;
-
   }
 
 

@@ -439,6 +439,7 @@ button{
   .myself{
     height: 30%;
     padding: 7%;
+    margin-bottom: 20%;
   }
 
   .content h1{

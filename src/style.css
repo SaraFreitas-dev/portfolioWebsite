@@ -8,9 +8,8 @@
 
 
 #mainPage {
-  width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  height:100vh;
+  max-height: 100%;
     background-image: url(../resources/2.avif);
     background-size: cover;
     background-position: center;
@@ -41,8 +40,8 @@
 
 
 #contactme {
-  height:fit-content;
-  width: auto;
+  height:100vh;
+  max-height: 100%;
   background-image: url(../resources/1151428.webp);
   opacity: 90%;
   background-size: cover;
@@ -293,7 +292,7 @@ button{
 /* ----------- MAIN MENU IMAGES ----------------- */
 .myself {
   width: 40%;
-  height: calc(70% + 50px);
+  height: 70%;
   position: absolute;
   bottom: 0;
   right: 50px;
@@ -420,13 +419,46 @@ button{
 
     }
 
+    
+/* Mobile styles */
+@media(max-width: 640px) {
+
+  button{
+    font-size: 10px;
+  }
+  #mainBtn a{
+    font-size: 7px;
+    
+  }        
+  
+  .navbar {
+    height: auto;
+    padding: 5px;
+  }
+
+  .myself{
+    height: 30%;
+    padding: 7%;
+  }
+
+  .content h1{
+    font-size: 40px;
+  }
+
+  .content h3{
+    font-size: 15px;
+  }
+
+    }
+
+
       @media (max-width: 412px) {
         .myself {
-            max-width: 20% !important;
+            max-width: 25% ;
             height: auto;
         }
       .content h1{
-        font-size: 80px;
+        font-size: 30px;
       }
     
       .content h3{

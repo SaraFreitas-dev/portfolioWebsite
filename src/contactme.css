@@ -114,7 +114,7 @@ transform: scale(1.1);
 
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 1000px) {
    #contactme{
       grid-template-columns: 1fr;   
    }

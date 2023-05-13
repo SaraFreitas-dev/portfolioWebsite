@@ -295,7 +295,9 @@ button{
 }
 
 .myself img {
-  height: calc(100% + 50px); /* Increase height by 50px */
+  display: block;
+  width: 100%;
+  height: auto;
   position: relative;
   left: -30%;
   top: 60%;
@@ -304,7 +306,9 @@ button{
 }
 
 .myself .shape {
-  min-height: 80%;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
   position: absolute;
   top: -10%;
   left: -20%;

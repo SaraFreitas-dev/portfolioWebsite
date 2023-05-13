@@ -92,7 +92,7 @@ transform: scale(1.1);
   /* -----------RESPONSIVE----------------- */
   @media (max-width: 1570px) {
    #contactme{
-      padding: 0px 3%;
+      padding: 5%;
       transition: .2s;
    }
  
@@ -116,6 +116,8 @@ transform: scale(1.1);
       padding-right: 5%;
    }
 
+  
+
   }
 
   @media (max-width: 1000px) {
@@ -127,15 +129,12 @@ transform: scale(1.1);
    }
 
    .contact-img{
-      max-width: 90%;
-      width: 50%;
+      width: 35%;
       height: auto;
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
    }
-   form{
-      padding-right: 12%;
-   }
+
    .contact-form form input, 
    form textarea{
        font-size: 0.8rem;
@@ -143,10 +142,10 @@ transform: scale(1.1);
     }
    
     .contact-img{
-      width: 35%;
+      width: 25%;
       height: auto;
       text-align: center;
-      margin-top: -10%;
+      padding-top: 15%;
    }
    
    .contact-form h1{
@@ -199,7 +198,7 @@ form textarea{
 
 
  .contact-img{
-   max-width: 30%;
+   max-width: 20%;
    width: 30%;
    height: auto;
    text-align: center;

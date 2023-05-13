@@ -58,15 +58,6 @@
   transform: translate(-50%, 6px);
 }
 
-/* Animation for the hamburger menu */
-.navigation .toggle.active::before {
-  transform: translate(-50%, 0) rotate(-45deg);
-}
-
-.navigation .toggle.active::after {
-  transform: translate(-50%, 0) rotate(45deg);
-  
-}
 
   .navigation.activate {
     width: 400px;
@@ -95,3 +86,19 @@
   }
   
   
+    /*-------TEXT TO APPEAR ON MENU------*/
+    .navigation .left-text {
+      position: absolute;
+      top: 50%;
+      left: 25%; 
+      transform: translate(-50%, -50%);
+      
+    }
+    
+    .navigation .right-text {
+      position: absolute;
+      top: 50%;
+      right:25%; 
+      transform: translate(50%, -50%);
+     
+    }

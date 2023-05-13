@@ -14,6 +14,7 @@ myButton1.addEventListener('click', () => {
 });
 
 
+
 /*-------------MOUSE ICON MOVEMENT--------------*/
 		var mouse = document.getElementById("mouse");
 		document.onmousemove = function(e){
@@ -24,6 +25,8 @@ myButton1.addEventListener('click', () => {
             document.getElementById("mouse-btn");
           });
           
+
+
 /*-------------------TOGGLE MENU------------------*/
 let menu = document.querySelector(".menu");
 let toggle = menu.querySelector(".toggle");
@@ -41,6 +44,7 @@ document.addEventListener("click", function(event) {
 });
 
 
+
 /*-------------------MAIN BUTTONS------------------*/
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function(e){
@@ -50,6 +54,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
 
 
 /*-----------BUTTON SOUNDS----------*/
@@ -77,6 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
     links[i].addEventListener("click", playAudio);
   }
 });
+
 
 
 /*-------------------SUBMIT EMAIL------------------*/
@@ -110,9 +116,11 @@ function sendEmail() {
 document.querySelector('.btn').addEventListener('click', sendEmail);
 
 
-/*-------------------SUBMIT EMAIL------------------*/
+
+
+/*-------------------LOADER------------------*/
 document.onreadystatechange = function() {
-  
+
   if (document.readyState !== "complete") {
     document.querySelector("body").style.visibility = "hidden";
     document.querySelector("#loader").style.visibility = "visible";
@@ -122,3 +130,31 @@ document.onreadystatechange = function() {
     document.querySelector("body").style.visibility = "visible";
   }
 };
+
+
+/*-------------------HAMBURGER MENU------------------*/
+// Get references to the left and right text elements
+const leftText = document.querySelector('.navigation .left-text');
+const rightText = document.querySelector('.navigation .right-text');
+const toggleButton = document.querySelector('.navigation .toggle');
+
+
+// Initially hide the text
+leftText.style.display = 'none';
+rightText.style.display = 'none';
+
+toggleButton.addEventListener('click', function() {
+
+  if (this.classList.contains('active')) {
+    // Button is active, show the text
+    leftText.style.display = 'none';
+    rightText.style.display = 'none'; 
+  } else {
+    leftText.style.display = 'block';
+    rightText.style.display = 'block';
+  }
+
+  // Toggle the 'active' class on the button
+  this.classList.toggle('active');
+});
+

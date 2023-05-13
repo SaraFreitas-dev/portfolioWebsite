@@ -194,13 +194,12 @@ padding:0% ;
 /*-------RESPONSIVE PART--------*/
 @media (max-width: 1000px) {
   p {
-    font-size: 20px;
+    font-size: 15px;
   }
 
   .multiText{
-    font-size: 30px;
+    font-size: 20px !important;
     align-content: center;
-    margin-right: 19%;
   }
 
 #aboutme{
@@ -224,10 +223,16 @@ h1{
  margin-bottom: 20%;
 }
 
+
+
+.about-img img{
+  height:40px;
+  }
+
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 620px) {
   p {
     font-size: 15px;
 

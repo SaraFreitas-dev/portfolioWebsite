@@ -34,7 +34,7 @@
 .contact-form form input, 
 form textarea{
     width: 100%;
-    padding: 17px;
+    padding: 12px;
     border: none;
     outline: none;
     backdrop-filter: blur(21px) saturate(160%);
@@ -92,13 +92,17 @@ transform: scale(1.1);
   /* -----------RESPONSIVE----------------- */
   @media (max-width: 1570px) {
    #contactme{
-      padding: 80px 3%;
+      padding: 0px 3%;
       transition: .2s;
    }
  
    .contact-form p{
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
       margin-right: 3rem;
+   }
+
+   .contact-form h1{
+      font-size: 5rem;
    }
 
 

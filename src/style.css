@@ -312,17 +312,19 @@ button{
   position: absolute;
   top: -10%;
   left: -20%;
-  animation: animate 4s linear infinite;
+  animation: animate 3s linear infinite;
   transform: translate(-50%, -50%) rotate(-35deg);
 }
 
 .myself .girl {
-  min-height: 100%;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
   position: absolute;
   top: 0%;
   left: -10%;
   transform: translate(40%, 20%);
-  animation: animate 4s linear infinite;
+  animation: animate 3s linear infinite;
 }
 
 .myself img {
@@ -338,7 +340,7 @@ button{
     transform: translate(0, 0);
   }
   50% {
-    transform: translate(10px, -10px);
+    transform: translate(20px, -20px);
   }
   100% {
     transform: translate(0, 0);
@@ -403,7 +405,7 @@ button{
 
   .myself{
     height: 60%;
-    padding: 7%;
+
   }
 
   .content h1{
@@ -433,16 +435,14 @@ button{
     padding: 5px;
   }
 
-  .myself{
+  .myself{   
+    margin: 20% -10%;
     height: 40%;
-    padding: 7%;
-    margin-bottom: 20%;
   }
 
   .content h1{
     font-size: 40px;
   }
-
   .content h3{
     font-size: 15px;
   }
@@ -454,6 +454,7 @@ button{
         .myself {
             max-width: 40% ;
             height: auto;
+            margin-bottom: 10%;
         }
       .content h1{
         font-size: 30px;
@@ -462,4 +463,6 @@ button{
       .content h3{
         font-size: 15px;
       }
+
+      
     }
